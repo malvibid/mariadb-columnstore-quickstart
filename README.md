@@ -42,7 +42,7 @@ $ yum install git
 ### 4. Clone **this** repository
 
 ```bash
-$ git clone https://github.com/mariadb-corporation/dev-example-columnstore-quickstart.git
+$ git clone https://github.com/mariadb-developers/mariadb-columnstore-quickstart.git
 ```
 
 ### 5. Download flight data 
