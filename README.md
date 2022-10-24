@@ -18,7 +18,7 @@ This walkthrough will step you through the process of installing, accessing and 
 
 **Note:** To use this download, import and use this data on an existing, non-container MariaDB Server instance (including [MariaDB SkySQL](https://mariadb.com/skyview)) jump to step #4.
 
-## INITIAL SET UP
+## 1. INITIAL SET UP
 
 ### Pull Docker image and create a Docker container
 
@@ -84,11 +84,11 @@ mariadb GRANT ALL PRIVILEGES ON travel.* TO '<user>'@'%' IDENTIFIED BY '<passwor
 mariadb --protocol tcp --host localhost -u <user> --password=<password>
 ```
 
-## SET UP THE DATABASE
+## 2. SET UP THE DATABASE
 
 ### **Within the container (in bash) (should have exited the MariaDB client):**
 
-Install [git](https://git-scm.com/) and [wget](https://www.gnu.org/software/wget/) using [yum](http://yum.baseurl.org/)
+### Install [git](https://git-scm.com/) and [wget](https://www.gnu.org/software/wget/) using [yum](http://yum.baseurl.org/)
 
 ```
 yum install git wget
@@ -157,7 +157,7 @@ The script can also be used with a MariaDB SkySQL database (by including a path 
 $ ./create_and_load.sh analytics-demo.mdb0001390.db.skysql.net 5001 DB00003799 Password123 skysql_chain.pem
 ```
 
-## TEST CONNECTION
+## 3. TEST CONNECTION
 
 ### **Test access from outside the container - with MariaDB client from the host**
 
