@@ -84,6 +84,8 @@ mariadb GRANT ALL PRIVILEGES ON travel.* TO '<user>'@'%' IDENTIFIED BY '<passwor
 mariadb --protocol tcp --host localhost -u <user> --password=<password>
 ```
 
+If you can connect to the MariaDB Server which is inside the docker container from the host machine, then docker container has been configured correctly. Proceed with the next steps.
+
 ## 2. SET UP THE DATABASE
 
 ### **Within the container (in bash) (should have exited the MariaDB client):**
